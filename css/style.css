@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Orbitron:wght@900&display=swap');
+
+*{box-sizing: border-box;}
+body{
+    background-color: rgb(160,160,160);
+}
+.flex-container{
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+}
+.grid-calc{
+    grid-template-areas: "a a a a a"
+                         "b c d e f"
+                         "g h i j k"
+                         "l m o n z"
+                         "p q r n s";
+    margin: auto;
+    max-width: 500px;
+    gap: 10px;
+    height: 70vh;
+
+}
+
+.grid-calc > button{
+    box-shadow: 3px 3px rgb(57,57,47);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25,25,25);
+    color: aliceblue;
+    font-size: large;
+}
+
+.grid-calc >button:hover{
+    background-color: rgb(125,125,125);
+}
+
+.grid-calc >button:active{
+    background-color: rgb(15,125,125);
+    outline: 2px solid rgb(18,127,127) ;
+    box-shadow: none;
+}
+.grid-calc > input{
+    grid-area: a;
+    background-color: rgb(200,210,200);
+    outline: transparent;
+    font-family: Orbitron;
+    font-size: 2rem;
+    text-align: end;
+}
+.grid-calc > #plus{
+    grid-area: n;
+    background-color: rgba(205, 74, 74, 0.806);
+}
+
+.grid-calc > #plus:hover{
+    background-color: rgba(105, 74, 74, 0.806);
+}
