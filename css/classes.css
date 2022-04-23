@@ -1,0 +1,21 @@
+.menu__burger >div{
+    content: "";
+    background-color: aqua;
+    height: 8px;
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    width: 20%;
+}
+.hidden__responsive{
+    display: none;
+}
+
+.menu__item{
+    display: block;
+    background-color: rgba( 51, 38, 35, 0.47 );
+}
+
+.menu__item:hover *{
+    color: rgb(228, 134, 237) !important;
+}

@@ -5,43 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <title>Calculadora</title>
 </head>
 <body>
     <div class="root">
         <header>
             <nav>
-
+                <ul class="fixed menu">
+                    <div id="burger" class="menu__burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="hidden__responsive">
+                        <li class="menu__item">
+                            <i class="lni lni-calculator"></i>
+                            <a href="#calc">Calculadora</a></li>
+                        <li class="menu__item">
+                            <i class="lni lni-book"></i>
+                            <a href="#formulas">Formulas</a></li>
+                    </div>
+                </ul>
             </nav>
         </header>
         <main>
-            <div class="grid-container grid-calc">
+            <p id="historial"></p>
+            <div id="calc" class="grid-container grid-calc">
                 <input id="screen" type="number" value="0">
                 <button class="number-button" button-value="1">1</button>
                 <button class="number-button" button-value="2">2</button>
                 <button class="number-button" button-value="3">3</button>
-                <button button-value="percentaje">%</button>
-                <button button-value="sqrt">sqrt</button>
+                <button id="clear" button-value="percentaje">C</button>
+                <button id="sqrt" button-value="sqrt">&#8730</button>
                 <button class="number-button" button-value="4">4</button>
                 <button class="number-button" button-value="5">5</button>
                 <button class="number-button" button-value="6">6</button>
-                <button button-value="times">x</button>
-                <button button-value="division">/</button>
+                <button id="times" button-value="times">x</button>
+                <button id="division" button-value="division">/</button>
                 <button class="number-button" button-value="7">7</button>
                 <button class="number-button" button-value="8">8</button>
                 <button class="number-button" button-value="9">9</button>
-                <button button-value="plus" id="plus">+</button>
-                <button button-value="minus">-</button>
+                <button id="plus" button-value="plus" >+</button>
+                <button id="minus" button-value="minus">-</button>
                 <button class="number-button" button-value="0">0</button>
-                <button class="number-button" button-value="00">00</button>
-                <button button-value="dot">.</button>
+                
+                <button id="dot" button-value="dot">.</button>
                 <button id="equals" button-value="equals">=</button>
               
                 
 
             </div>
+            <div id="formulas">
+
+            </div>
         </main>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+.grid-container{
+    display: grid;
+}
+.grid-calc{
+    grid-template-areas: "a a a a a"
+                         "b c d e f"
+                         "g h i j k"
+                         "l m o n z"
+                         "p p r n s";
+    margin: auto;
+    max-width: 500px;
+    width: 95%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    height: 70vh;
+    background: rgba( 180, 209, 90, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 131, 138, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    margin-top: 15vh;
+
+}
+
+.grid-calc > button{
+    box-shadow: 3px 3px rgb(57,57,47);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25,25,25);
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.grid-calc >button:hover{
+    background-color: rgb(125,125,125);
+}
+
+.grid-calc >button:active{
+    background-color: rgb(15,125,125);
+    outline: 2px solid rgb(18,127,127) ;
+    box-shadow: none;
+}
+.grid-calc > input{
+    grid-area: a;
+    background-color: rgb(200,210,200);
+    outline: transparent;
+    font-family: Orbitron;
+    font-size: 3rem;
+    text-align: end;
+    border-radius: 12px;
+    margin-bottom: 23px;
+    line-height: 0;
+    word-spacing: 0;
+}
+.grid-calc > #plus{
+    grid-area: n;
+    background-color: rgba(205, 74, 74, 0.806);
+}
+
+.grid-calc > #plus:hover{
+    background-color: rgba(105, 74, 74, 0.806);
+}
